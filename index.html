@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-apple" aria-hidden="true"></i
+              ></span>
+              <span class="title"><h2>Brand Name</h2></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-home" aria-hidden="true"></i
+              ></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-users" aria-hidden="true"></i>
+              </span>
+              <span class="title">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-comment" aria-hidden="true"></i>
+              </span>
+              <span class="title">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-cog" aria-hidden="true"></i>
+              </span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-lock" aria-hidden="true"></i>
+              </span>
+              <span class="title">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-sign-out" aria-hidden="true"></i>
+              </span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <main class="main">
+        <div class="topbar">
+          <div class="toggle" onclick="toggleMenu();"></div>
+          <div class="search">
+            <label for="">
+              <input type="text" placeholder="Pesquise Aqui" />
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="user">
+            <img src="./img/user.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1.042</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">200</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">$6.042</div>
+              <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn"> View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>R$ 1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>R$ 100</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>R$ 620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Hp Laptop</td>
+                  <td>R$ 3450</td>
+                  <td>Due</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>R$ 1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>R$ 100</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>R$ 620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Hp Laptop</td>
+                  <td>R$ 3450</td>
+                  <td>Due</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./img/img1.jpg" alt="" /></div>
+                  </td>
+                  <td><h4>David</h4><span>Italy</span></td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./img/img2.jpeg" alt="" /></div>
+                  </td>
+                  <td><h4>Bianca</h4><span>Brazil</span></td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./img/img3.jpg" alt="" /></div>
+                  </td>
+                  <td><h4>Nathan</h4><span>EUA</span></td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./img/img4.jpeg" alt="" /></div>
+                  </td>
+                  <td><h4>Millena</h4><span>Portugal</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      function toggleMenu() {
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
