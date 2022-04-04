@@ -340,12 +340,15 @@ body {
 }
 @media (max-width: 480px) {
   .navigation{
-    width: 100%;
+    width: 100vw;
     left: -100%;
     z-index: 100;
   }
   .navigation.active{
-    width: 100%;
+    width: 100vw;
+    left: 0;
+  }
+  .main.active{
     left: 0;
   }
   .toggle.active{
@@ -353,7 +356,6 @@ body {
     z-index: 101;
     right: 0;
     left: initial;
-
   }
   .toggle.active::before{
     color: #fff;;
